@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchFin - Inteligencia operativa para credito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <nav class="nav-bar" aria-label="Navegacion principal">
+                <a class="header-logo" href="#top" aria-label="MatchFin inicio">
+                    <span class="logo-symbol">M</span>
+                    <span class="logo-text">MATCHFIN</span>
+                </a>
+                <div class="nav-pills">
+                    <a href="#mercados">Mercados</a>
+                    <a href="#arquitectura">Motor</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#modelo">Modelo</a>
+                </div>
+            </nav>
+
+            <section class="hero" id="top">
+                <div class="hero-copy">
+                    <span class="section-badge">Infraestructura de legibilidad, observabilidad y anticipacion financiera</span>
+                    <h1>MatchFin convierte informacion financiera dispersa en decisiones de credito trazables.</h1>
+                    <p class="subtitle">Un mismo motor para evaluar empresas, monitorear riesgo, anticipar desvios y coordinar decisiones entre instituciones financieras, proveedores y areas operativas.</p>
+                    <div class="hero-actions">
+                        <a class="primary-action" href="#demo">Ver decision simulada</a>
+                        <a class="secondary-action" href="#arquitectura">Explorar arquitectura</a>
+                    </div>
+                </div>
+                <aside class="hero-panel" aria-label="Resumen del impacto MatchFin">
+                    <div class="signal-card signal-card-main">
+                        <span>Antes</span>
+                        <strong>Datos dispersos, analisis manual, decisiones dificiles de auditar.</strong>
+                    </div>
+                    <div class="signal-flow" aria-hidden="true">&darr;</div>
+                    <div class="signal-card">
+                        <span>Con MatchFin</span>
+                        <strong>Legibilidad + monitoreo + prediccion + decision.</strong>
+                    </div>
+                    <div class="metrics-strip">
+                        <div><strong>6</strong><span>capas</span></div>
+                        <div><strong>2</strong><span>mercados</span></div>
+                        <div><strong>1</strong><span>motor</span></div>
+                    </div>
+                </aside>
+            </section>
+        </header>
+
+        <main>
+            <section class="problem-band">
+                <div>
+                    <span class="section-badge">Problema que resuelve</span>
+                    <h2>El credito se decide con informacion incompleta, vieja o dificil de coordinar.</h2>
+                </div>
+                <div class="problem-grid">
+                    <article>
+                        <strong>Asimetria</strong>
+                        <p>Datos de fuentes oficiales, balances, noticias, juicios y comportamiento quedan separados.</p>
+                    </article>
+                    <article>
+                        <strong>Tiempo</strong>
+                        <p>La evaluacion depende de analistas, planillas, adjuntos y validaciones repetidas.</p>
+                    </article>
+                    <article>
+                        <strong>Riesgo vivo</strong>
+                        <p>Una aprobacion puntual no alcanza cuando el riesgo cambia todos los dias.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="split-section" id="mercados">
+                <div class="section-heading">
+                    <span class="section-badge">Dos mercados que conviven</span>
+                    <h2>Misma infraestructura, dos formas de capturar valor.</h2>
+                    <p>MatchFin no necesita construir dos productos desde cero: reutiliza integraciones, analisis, workflows, alertas e IA sobre necesidades distintas.</p>
+                </div>
+                <div class="market-grid">
+                    <article class="card market-card interactive-card selected-focus" data-target="market-a">
+                        <div class="card-header">
+                            <span class="card-icon">A</span>
+                            <h3>Instituciones financieras</h3>
+                        </div>
+                        <p>Opera onboarding, compliance, credit management, monitoreo y trazabilidad para bancos, ALyCs, SGRs, fondos y agentes.</p>
+                        <ul class="card-bullets">
+                            <li><strong>Compran:</strong> compliance, legales, COO, mesa y directorio.</li>
+                            <li><strong>Buscan:</strong> menor riesgo, mas trazabilidad y decision auditable.</li>
+                            <li><strong>Modelo:</strong> SaaS institucional con setup e integraciones.</li>
+                        </ul>
+                    </article>
+                    <article class="card market-card interactive-card" data-target="market-b">
+                        <div class="card-header">
+                            <span class="card-icon">B</span>
+                            <h3>Empresas on-demand</h3>
+                        </div>
+                        <p>Evalua clientes, proveedores y contrapartes para areas de credito, cobranzas, procurement, supply chain y CFO operativo.</p>
+                        <ul class="card-bullets">
+                            <li><strong>Compran:</strong> packs de analisis, monitoreo y tenant privado.</li>
+                            <li><strong>Buscan:</strong> reducir incobrabilidad y anticipar problemas.</li>
+                            <li><strong>Modelo:</strong> consumo digital con expansion por cartera.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="architecture-section" id="arquitectura">
+                <div class="section-heading">
+                    <span class="section-badge">Motor MatchFin</span>
+                    <h2>De dato crudo a decision accionable en seis capas.</h2>
+                </div>
+                <div class="layers-grid">
+                    <button class="layer-card interactive-card selected-focus" data-target="layer-1"><span>1</span><strong>Datos</strong><small>Ingesta multifuente y normalizacion.</small></button>
+                    <button class="layer-card interactive-card" data-target="layer-2"><span>2</span><strong>Legibilidad</strong><small>Scores, ratios, covenants y salud financiera.</small></button>
+                    <button class="layer-card interactive-card" data-target="layer-3"><span>3</span><strong>Observabilidad</strong><small>Monitoreo continuo, alertas y eventos.</small></button>
+                    <button class="layer-card interactive-card" data-target="layer-4"><span>4</span><strong>Prediccion</strong><small>Escenarios, stress testing y probabilidades.</small></button>
+                    <button class="layer-card interactive-card" data-target="layer-5"><span>5</span><strong>IA cognitiva</strong><small>NLP, copiloto, explicabilidad e investigacion.</small></button>
+                    <button class="layer-card interactive-card" data-target="layer-6"><span>6</span><strong>Decision</strong><small>Politicas, overrides, comites y auditoria.</small></button>
+                </div>
+                <div class="console-section">
+                    <div class="console-header">
+                        <div class="console-dot-group"><span></span><span></span><span></span></div>
+                        <span id="insight-title">Capa 1 - Datos</span>
+                    </div>
+                    <div class="console-body">
+                        <p id="insight-copy">Conecta fuentes oficiales, privadas y documentales para crear una base unificada por CUIT, con procedencia y normalizacion.</p>
+                        <div id="insight-tags" class="insight-tags"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="demo-section" id="demo">
+                <div class="section-heading">
+                    <span class="section-badge">Workflow IA-driven</span>
+                    <h2>El workflow ordena la operacion. El Assistant queda siempre disponible.</h2>
+                    <p>La secuencia muestra las instancias operativas. En paralelo, el cliente o analista puede consultar libremente sobre el CUIT, las fuentes acumuladas, los hallazgos, el riesgo y la usabilidad de MatchFin.</p>
+                </div>
+                <div class="demo-grid">
+                    <div class="workflow-panel">
+                        <div class="workflow-vertical-stepper" aria-label="Workflow de evaluacion">
+                            <button class="step selected-focus" data-step="0"><span>1</span><strong>Ingreso de datos</strong><small>Empresa o institucion carga el tenant privado.</small></button>
+                            <button class="step" data-step="1"><span>2</span><strong>Autogestion / onboarding</strong><small>Registro, validacion y configuracion del tenant.</small></button>
+                            <button class="step" data-step="2"><span>3</span><strong>Carga / consulta de CUIT</strong><small>Ingreso manual, API o carga masiva.</small></button>
+                            <button class="step" data-step="3"><span>4</span><strong>Investigacion IA</strong><small>Busca, compila y clasifica informacion externa.</small></button>
+                            <button class="step" data-step="4"><span>5</span><strong>Analisis integral</strong><small>Score, QAMT, ratios y factores contextuales.</small></button>
+                            <button class="step" data-step="5"><span>6</span><strong>Prediccion y escenarios</strong><small>Riesgo futuro, estabilidad y probabilidades.</small></button>
+                            <button class="step" data-step="6"><span>7</span><strong>Recomendacion IA</strong><small>Acciones sugeridas y soporte al analista.</small></button>
+                            <button class="step" data-step="7"><span>8</span><strong>Decision / accion</strong><small>Decision tomada, monitoreo activo y alertas.</small></button>
+                        </div>
+                        <div class="workflow-insight">
+                            <span id="workflow-kicker">Instancia 1</span>
+                            <strong id="workflow-title">Ingreso de datos</strong>
+                            <p id="workflow-copy">Carga inicial del tenant con fuentes, documentos e identificadores que luego quedan disponibles para analisis y consulta.</p>
+                        </div>
+                    </div>
+                    <div class="assistant-chat-panel">
+                        <div class="cuit-indicator">
+                            <div class="header-logo-cuit">
+                                <span class="logo-symbol">IA</span>
+                                <span class="logo-text">MatchFin Assistant</span>
+                            </div>
+                            <span class="dataset-status"><span class="status-dot"></span>CUIT 30-74891253-9</span>
+                        </div>
+                        <div class="chat-history-integrated" id="chat-messages"></div>
+                        <form class="chat-input-area" id="chat-form">
+                            <input id="chat-input" type="text" placeholder="Consulta abierta: CUIT, fuentes, riesgo, alertas, operacion o uso de MatchFin..." autocomplete="off">
+                            <button id="chat-submit-btn" type="submit" aria-label="Enviar pregunta">&uarr;</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="model-section" id="modelo">
+                <div class="section-heading">
+                    <span class="section-badge">Modelo de negocio</span>
+                    <h2>La misma base habilita suscripcion, consumo, IA premium y futuras proyecciones de ingreso.</h2>
+                </div>
+                <div class="monetizacion-grid">
+                    <article><span>01</span><strong>SaaS institucional</strong><p>Contratos anuales, usuarios, workflows e integraciones.</p></article>
+                    <article><span>02</span><strong>On-demand empresas</strong><p>Packs de consultas, monitoreo de cartera y tenant privado.</p></article>
+                    <article><span>03</span><strong>Prediccion e IA</strong><p>Alertas avanzadas, copiloto, escenarios y benchmarks.</p></article>
+                    <article><span>04</span><strong>Embedded API</strong><p>Scoring, monitoreo y decision dentro de ERPs o core bancarios.</p></article>
+                    <article><span>05</span><strong>Network intelligence</strong><p>Comparables sectoriales e inteligencia acumulada del ecosistema.</p></article>
+                    <article class="future-model"><span>06</span><strong>Fee transaccional potencial</strong><p>Proyeccion a analizar. Requeriria flujos, dinamicas e integraciones complementarias no incluidas en el alcance actual.</p></article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
